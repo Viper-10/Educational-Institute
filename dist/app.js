@@ -49,6 +49,15 @@ function handleClick(e) {
       currentPage === "home" ? mobileSideBarMenu2 : mobileSideBarMenu
     );
   }
+  if (e.target.classList.contains("fa-youtube")) {
+    window.open("https://www.youtube.com/channel/UCQ71Y6dp5f-HZaKB4ZQZDlg");
+  } else if (e.target.classList.contains("fa-facebook-f")) {
+    window.open("https://www.facebook.com/KCT.edu/");
+  } else if (e.target.classList.contains("fa-instagram")) {
+    window.open("https://www.instagram.com/kct_84/");
+  } else if (e.target.classList.contains("fa-linkedin-in")) {
+    window.open("https://www.linkedin.com/school/kct/");
+  }
 }
 
 function changeDropdownVisibility(mobileSideBarMenu) {
@@ -91,3 +100,10 @@ const logoDivs = document.getElementsByClassName("logo-wrapper");
 Array.from(logoDivs).forEach((element) => {
   element.addEventListener("click", showHomePage);
 });
+
+// const icons = document.querySelectorAll(".fa-brands.icon");
+// console.log(icons);
+
+// Array.from(icons).forEach((icon) => {
+//   icon.addEventListener("click", iconEventHandler);
+// });

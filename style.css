@@ -29,7 +29,7 @@
 }
 #about-page-button {
   left: 0;
-  background-color: #111;
+  background-color: #333;
   animation: fade-in 0.8s;
   color: white;
 }
@@ -517,7 +517,8 @@ img {
   .welcome-section {
     font-size: 52px;
   }
-  .socials-wrapper .icon:active {
+  #home-page .socials-wrapper .icon:active,
+  #about-page .socials-wrapper .icon:active {
     color: var(--primary-yellow);
   }
 
